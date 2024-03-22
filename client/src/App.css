@@ -1,0 +1,55 @@
+:root {
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color, #fff);
+  color: var(--text-color, #000);
+  transition: background-color 0.3s, color 0.3s;
+  /* align-items:  center;
+  justify-content: center; */
+}
+
+.light-mode {
+      
+/* Enkel gradient bakgrund */
+      background-image: linear-gradient(to top, #FFC081, #fffce6 60%);
+  
+}
+
+.dark-mode {
+  /* Bakgrund för mörkt läge */
+  background-image: radial-gradient(var(--pattern-size) at 50% 100%, var(--dark-pattern-color1), var(--dark-pattern-color2));
+}
+
+button {
+  cursor: pointer;
+}
+
+/* grundläggande styling för filter-section */
+.filter-section {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* dark mode-variabler */
+.dark-mode {
+  --background-color: #333;
+  --text-color: #fff;
+}
+
+/* stilar för att hantera mörkt läge */
+@media (prefers-color-scheme: dark) {
+  /* Anpassade stilar för mörkt läge */
+}
+
+/* responsiva stilar */
+@media (max-width: 600px) {
+  /* stilar för små skärmar, mobiler etc */
+}
